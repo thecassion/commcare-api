@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 # Package metadata
 name = "commcare-api"
-version = "0.1-alpha"
+version = "0.1.0-alpha"
 description = "Python library for interacting with the CommCareHQ API"
 author = "Pierre Robentz Cassion"
 author_email = "pierrerobentz.cassion@gmail.com"
