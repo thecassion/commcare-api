@@ -32,16 +32,22 @@ classifiers = [
 # Package entry points and package discovery
 packages = find_packages()
 
+# Read the long description from a separate file
+with open("README.md", "r") as f:
+    long_description = f.read()
+
 # Package setup
 setup(
     name=name,
     version=version,
     description=description,
+    long_description=long_description,
+    long_description_content_type="text/markdown",  # Specify the content type
     author=author,
     author_email=author_email,
     url=url,
     license=license,
     install_requires=install_requires,
     classifiers=classifiers,
-    packages=packages,
+    packages=find_packages(),
 )
